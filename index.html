@@ -9,9 +9,9 @@
 </head>
 <body>
   <model-viewer 
-  id="fullswing"
-  animation-name="fullswingAnim"
-  src="../MAIN/ASSET/GLB/fullswing.glb" 
+  id="model-viewer"
+  animation-name="modelAnim"
+  src="../MAIN/ASSET/GLB/malegolf_fullswing.glb"
   autoplay
   shadow-intensity="1" 
   ar 
@@ -35,11 +35,11 @@
     <button onclick="stop()" class="controlsbtn" type="button">Stop</button> -->
     <div class="slider">
       <div class="slides">
-        <button class="slide selected" onclick="switchSrc(this, 'fullswing')" style="background-image: url('./MAIN/ASSET/png/fullswing.png');">  
+        <button class="slide selected" onclick="switchSrc(this, 'maleoglf_fullswing')" style="background-image: url('./MAIN/ASSET/png/fullswing.png');">  
         </button><button class="slide" onclick="switchSrc(this, 'barbell_squat')" style="background-image: url('./MAIN/ASSET/png/barbell_squat.png');">  
         </button><button class="slide" onclick="switchSrc(this, 'dumbbell_squat')" style="background-image: url('./MAIN/ASSET/png/dumbbell_squat.png');"> 
         </button><button class="slide" onclick="switchSrc(this, 'femalegolf_fullswing')" style="background-image: url('./MAIN/ASSET/png/femalegolf_fullswing.png');">        
-        </button><button class="slide" onclick="switchSrc(this, 'freestyle_waccking')" style="background-image: url('./MAIN/ASSET/png/freestyle_waacking.png');"> 
+        </button><button class="slide" onclick="switchSrc(this, 'freestyle_waacking')" style="background-image: url('./MAIN/ASSET/png/freestyle_waacking.png');"> 
         </button><button class="slide" onclick="switchSrc(this, 'hiphop_itzy')" style="background-image: url('./MAIN/ASSET/png/hiphop_itzy.png');">        
         </button><button class="slide" onclick="switchSrc(this, 'kettlebell_lunge')" style="background-image: url('./MAIN/ASSET/png/kettlebell_lunge.png');">
         </button><button class="slide" onclick="switchSrc(this, 'stretching_side lunge')" style="background-image: url('./MAIN/ASSET/png/stretching_side\ lunge.png');">
@@ -50,21 +50,21 @@
   <script>
     function pause(){
   //alert("작동")
-  const modelViewer = document.querySelector('#fullswing');
-  modelViewer.animationName = 'fullswingAnim';
+  const modelViewer = document.querySelector('#model-viewer');
+  modelViewer.animationName = 'modelAnim';
   modelViewer.pause();
 }
 
 function play(){
-  const modelViewer = document.querySelector('#fullswing');
-  modelViewer.animationName = 'fullswingAnim';
+  const modelViewer = document.querySelector('#model-viewer');
+  modelViewer.animationName = 'modelAnim';
   //modelViewer.currentTime = 0;
   modelViewer.play();
 }
 
 function stop(){
-  const modelViewer = document.querySelector('#fullswing');
-  modelViewer.animationName = 'fullswingAnim';
+  const modelViewer = document.querySelector('#model-viewer');
+  modelViewer.animationName = 'modelAnim';
   //modelViewer.currentTime = 0;
   modelViewer.currentTime = 0;
   modelViewer.pause();
@@ -93,11 +93,23 @@ function stop(){
     /* This keeps child nodes hidden while the element loads */
     /* @import "reset.css"; */
     :not(:defined) > * {
+      margin: 0;
+      padding: 0;
       display: none;
     }
-  
+    html{
+      height: 100%;
+      width: 100%;
+    }
+    body {
+    width: 100%;
+    height: 100%;
+    font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
+    color: #353535;
+    background-color: #353535;
+    }
     model-viewer {
-      height: 600px;
+      height: 100%;
       width: 100%;
       text-align: center;
       background-color: #232323;
@@ -119,11 +131,11 @@ function stop(){
       padding: 0px 16px 0px 40px;
       font-family: Roboto Regular, Helvetica Neue, sans-serif;
       font-size: 14px;
-      color: #fff;;
+      color: #000;;
       height: 36px;
       line-height: 36px;
       border-radius: 18px;
-      border: 1px solid #DADCE0;
+      border: 1px solid #FFFF00;
     }
   
     #ar-button:active {
@@ -228,13 +240,7 @@ function stop(){
       background-color:wheat;
       border-end-start-radius: 10;
     } */
-    body {
-    margin: 0;
-    padding: 0;
-    font-family: Google Sans, Noto, Roboto, Helvetica Neue, sans-serif;
-    color: #353535;
-    background-color: #353535;
-    }
+    
 
     #card {
     margin: 3em auto;
@@ -246,12 +252,14 @@ function stop(){
     overflow: hidden;
     }
 
-    model-viewer {
+    /* model-viewer {
     width: 100%;
-    height: 700px;
+    height: 900px;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
     background-color: #353535;
-    }
+    } */
 
   /* .attribution {
   display: flex;
