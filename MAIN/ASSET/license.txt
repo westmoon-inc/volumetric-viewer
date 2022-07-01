@@ -1,0 +1,11 @@
+Model Information:
+* title:	Axe
+* source:	https://sketchfab.com/3d-models/axe-c77222df8fba42da87fc9ee214cf4521
+* author:	Wrotzal (https://sketchfab.com/Wrotzal)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Axe" (https://sketchfab.com/3d-models/axe-c77222df8fba42da87fc9ee214cf4521) by Wrotzal (https://sketchfab.com/Wrotzal) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
