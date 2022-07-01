@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./MAIN/CSS/main.css">
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script src="./MAIN/JS/test3.js"></script>
-  <title>Test Page</title>
+  <link rel="stylesheet" href="./MAIN/CSS/index.css">
+  <script src="./MAIN/JS/index.js"></script>
+  <title>Model-Viewer Test</title>
 </head>
 <body>
   <section>
@@ -15,98 +14,55 @@
   </section>
   <section>
     <div class="container reveal">
-      <h2>Golf Man</h2>
-      <hr>
+      <h2>Test Model-Viewer</h2>
       <div class="text-container">
-        <div>
-          <model-viewer 
-          id="golfman"
-          alt="A golf man"
-          src="./MAIN/ASSET/fullswing.glb"
-          animation-name = "fullswingAnim"
-          ar
-          ar-modes="webxr scene-viewer quick-look"
-          ar-scale="auto"
-          camera-controls
-          orbit-sensitivity="1"
-          timeScale="100"
-          >
-            <div>
-              <br>
-              <button onclick="play()" type="button">Play</button>
-              <button onclick="pause()" type="button">Pause</button>
-              <button onclick="test()"type="button">test</button>
-            </div>
-            <button slot="ar-button" id="ar-button">HELLO</button>
-            <button  onclick="pause();">
-              정지
-            </button> 
-            <button onclick="play();">
-              재생
-            </button>  
-            <progress id="progress-bar" min="0" max="100" value="0"></progress>
-            <div id="ar-prompt">
-              안녕하세요
-            </div>
-            <button id="ar-failure">
-              AR is not tracking!
-            </button>
-            <div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
-              <button id="tsetbutton">
-                  HIDE OBJECTS
-              </button>
-          </div>
-        
-          </model-viewer>
-          <button id="pausebtn" onclick="pause();">정지</button>
-          <button id="playbtn" onclick="play();">재생</button>
+        <div class="text-box">
+          <h3>Test1</h3>
+          <p>
+            <a href="./test7.html">Test1</a>
+          </p>
         </div>
+        <div class="text-box">
+          <h3>empty</h3>
+          <p>
+            a blank space
+          </p>
+        </div>
+        <div class="text-box">
+          <h3>empty</h3>
+          <p>
+            a blank space
+          </p>
+        </div>
+      </div>
     </div>
   </section>
   
   <section>
     <div class="container reveal">
-      <h2>Golf Man</h2>
-      <hr>
+      <h2>Caption</h2>
       <div class="text-container">
-        <div>
-          <model-viewer src="./MAIN/ASSET/fullswing.glb"
-          disable-zoom
-          ar
-          ar-modes="webxr scene-viewer quick-look"
-          ar-scale="fixed"
-          camera-controls
-          
-          ></model-viewer>
-          
+        <div class="text-box">
+          <h3>empty</h3>
+          <p>
+            a blank space
+          </p>
         </div>
+        <div class="text-box">
+          <h3>empty</h3>
+          <p>
+            a blank space
+          </p>
+        </div>
+        <div class="text-box">
+          <h3>empty</h3>
+          <p>
+            a blank space
+          </p>
+        </div>
+      </div>
     </div>
   </section>
   
-  <section>
-    <div class="container reveal">
-      <h2>Golf Man</h2>
-      <hr>
-      <div class="text-container">
-        <div>
-          <model-viewer src="./MAIN/ASSET/malegolf_with_darco_frame0100.glb"
-          disable-zoom
-          ar
-          ar-modes="webxr scene-viewer quick-look"
-          ar-scale="fixed"
-          camera-controls
-          info 
-          ></model-viewer>
-          
-        </div>
-    </div>
-  </section>
-  <!-- <a href="./test.html"><h3>페이지 이동 test</h3></a>
-  <a href="./test2.html"><h3>페이지 이동 test2</h3></a>
-  <a href="./test3.html"><h3>페이지 이동 test3</h3></a>  -->
-  <a href="./test4.html"><h3>페이지 이동 test4</h3></a>
-  <a href="./test5.html"><h3>페이지 이동 test5</h3></a>
-  <a href="./test6.html"><h3>페이지 이동 test6</h3></a>
-  <a href="./test7.html"><h3>페이지 이동test7</h3></a>
 </body>
 </html>
