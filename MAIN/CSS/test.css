@@ -54,6 +54,9 @@ section .text-container .text-box h3{
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+section .text-container .text-box .a{
+  text-decoration: none;
+}
 
 @media (max-width: 900px){
   section h1{
