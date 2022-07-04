@@ -13,6 +13,7 @@
   animation-name="modelAnim"
   src="./MAIN/ASSET/GLB/malegolf_fullswing.glb"
   autoplay
+  reveal="interaction"
   shadow-intensity="1" 
   ar 
   ar-modes="webxr scene-viewer quick-look" 
@@ -35,18 +36,19 @@
     <button onclick="stop()" class="controlsbtn" type="button">Stop</button> -->
     <div class="slider">
       <div class="slides">
-        <button class="slide selected" onclick="switchSrc(this, 'malegolf_fullswing')" style="background-image: url('./MAIN/ASSET/png/fullswing.png');">  
-        </button><button class="slide" onclick="switchSrc(this, 'barbell_squat')" style="background-image: url('./MAIN/ASSET/png/barbell_squat.png');">  
-        </button><button class="slide" onclick="switchSrc(this, 'dumbbell_squat')" style="background-image: url('./MAIN/ASSET/png/dumbbell_squat.png');"> 
-        </button><button class="slide" onclick="switchSrc(this, 'femalegolf_fullswing')" style="background-image: url('./MAIN/ASSET/png/femalegolf_fullswing.png');">        
-        </button><button class="slide" onclick="switchSrc(this, 'freestyle_waacking')" style="background-image: url('./MAIN/ASSET/png/freestyle_waacking.png');"> 
-        </button><button class="slide" onclick="switchSrc(this, 'hiphop_itzy')" style="background-image: url('./MAIN/ASSET/png/hiphop_itzy.png');">        
-        </button><button class="slide" onclick="switchSrc(this, 'kettlebell_lunge')" style="background-image: url('./MAIN/ASSET/png/kettlebell_lunge.png');">
-        </button><button class="slide" onclick="switchSrc(this, 'stretching_side lunge')" style="background-image: url('./MAIN/ASSET/png/stretching_side\ lunge.png');">
+        <button class="slide selected" onclick="switchSrc(this, 'malegolf_fullswing')" style="background-image: url('./MAIN/ASSET/GLB/malegolf_fullswing.png');">
+        </button><button class="slide" onclick="switchSrc(this, 'barbell_squat')" style="background-image: url('./MAIN/ASSET/GLB/barbell_squat.png');">  
+        </button><button class="slide" onclick="switchSrc(this, 'dumbbell_squat')" style="background-image: url('./MAIN/ASSET/GLB/dumbbell_squat.png');"> 
+        </button><button class="slide" onclick="switchSrc(this, 'femalegolf_fullswing')" style="background-image: url('./MAIN/ASSET/GLB/femalegolf_fullswing.png');">        
+        </button><button class="slide" onclick="switchSrc(this, 'freestyle_waacking')" style="background-image: url('./MAIN/ASSET/GLB/freestyle_waacking.png');"> 
+        </button><button class="slide" onclick="switchSrc(this, 'hiphop_itzy')" style="background-image: url('./MAIN/ASSET/GLB/hiphop_itzy.png');">        
+        </button><button class="slide" onclick="switchSrc(this, 'kettlebell_lunge')" style="background-image: url('./MAIN/ASSET/GLB/kettlebell_lunge.png');">
+        </button><button class="slide" onclick="switchSrc(this, 'stretching_side lunge')" style="background-image: url('./MAIN/ASSET/GLB/stretching_side lunge.png');">
         </button>
       </div>
     </div>
   </model-viewer>
+  <a href="./controls.html">Test</a>
   <script>
     function pause(){
   //alert("작동")
@@ -113,7 +115,7 @@ function stop(){
     background-color: #353535;
     }
     model-viewer {
-      height: 100%;
+      height: 90%;
       width: 100%;
       text-align: center;
       background-color: #232323;
