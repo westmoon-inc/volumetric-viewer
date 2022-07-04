@@ -13,7 +13,6 @@
   animation-name="modelAnim"
   src="./MAIN/ASSET/GLB/malegolf_fullswing.glb"
   autoplay
-  reveal="interaction"
   shadow-intensity="1" 
   ar 
   ar-modes="webxr scene-viewer quick-look" 
@@ -24,7 +23,7 @@
     </button>
   
     <div id="ar-prompt">
-      <img src="./MAIN/ASSET/png/hand.png">
+      <img src="./MAIN/ASSET/GLB/hand.png">
     </div>
   
     <button id="ar-failure">
@@ -43,12 +42,11 @@
         </button><button class="slide" onclick="switchSrc(this, 'freestyle_waacking')" style="background-image: url('./MAIN/ASSET/GLB/freestyle_waacking.png');"> 
         </button><button class="slide" onclick="switchSrc(this, 'hiphop_itzy')" style="background-image: url('./MAIN/ASSET/GLB/hiphop_itzy.png');">        
         </button><button class="slide" onclick="switchSrc(this, 'kettlebell_lunge')" style="background-image: url('./MAIN/ASSET/GLB/kettlebell_lunge.png');">
-        </button><button class="slide" onclick="switchSrc(this, 'stretching_side lunge')" style="background-image: url('./MAIN/ASSET/GLB/stretching_side lunge.png');">
+        </button><button class="slide" onclick="switchSrc(this, 'stretching_side lunge')" style="background-image: url('./MAIN/ASSET/GLB/stretching_side\ lunge.png');">
         </button>
       </div>
     </div>
   </model-viewer>
-  <a href="./controls.html">Test</a>
   <script>
     function pause(){
   //alert("작동")
@@ -115,7 +113,7 @@ function stop(){
     background-color: #353535;
     }
     model-viewer {
-      height: 90%;
+      height: 100%;
       width: 100%;
       text-align: center;
       background-color: #232323;
