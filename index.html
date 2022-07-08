@@ -6,20 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <link rel="preload" href="./MAIN/ASSET/GLB/malegolf_fullswing.glb" as="object" />
-  <link rel="preload" href="./MAIN/ASSET/GLB/barbell_squat.glb" as="object" />
-  <link rel="preload" href="./MAIN/ASSET/GLB/dumbbell_squat.glb" as="object" />
-  <link rel="preload" href="./MAIN/ASSET/GLB/femalegolf_fullswing.glb" as="object" />
-  <link rel="preload" href="./MAIN/ASSET/GLB/freestyle_waacking.glb" as="object" />
-  <link rel="preload" href="./MAIN/ASSET/GLB/hiphop_itzy.glb" as="object" />
-  <link rel="preload" href="./MAIN/ASSET/GLB/kettlebell_lunge.glb" as="object" />
-  <link rel="preload" href="./MAIN/ASSET/GLB/stretching_side_lunge.glb" as="object" />
   <title>WestMoon</title>
 </head>
 
 <body>
-  <model-viewer id="model-viewer" src="./MAIN/ASSET/GLB/malegolf_fullswing.glb"
-    shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+  <model-viewer id="model-viewer" 
+    src="./MAIN/ASSET/GLB/malegolf_fullswing.glb"
+    shadow-intensity="1" 
+    ar 
+    ar-modes="webxr scene-viewer quick-look" 
+    camera-controls
+    ios-src="./MAIN/ASSET/GLB/malegolf_fullswing.usdz"
     autoplay>
     <button slot="ar-button" id="ar-button">
       View in your space
@@ -58,7 +55,7 @@
       </div>
     </div>
   </model-viewer>
-  <script>
+  <!-- <script>
     function pause() {
       //alert("작동")
       const modelViewer = document.querySelector('#model-viewer');
@@ -80,7 +77,7 @@
       modelViewer.currentTime = 0;
       modelViewer.pause();
     }
-  </script>
+  </script> -->
 
   <script type="module">
     const modelViewer = document.querySelector("model-viewer");
